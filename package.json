@@ -1,0 +1,9 @@
+{
+  "name": "loy-krathong-online",
+  "version": "1.0.0",
+  "description": "เว็บไซต์ลอยกระทงออนไลน์สำหรับการศึกษา",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js"
+  }
+}

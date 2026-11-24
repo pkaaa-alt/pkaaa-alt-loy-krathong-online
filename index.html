@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ลอยกระทงออนไลน์ | คืนวันเพ็ญ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <main class="app">
+    <header>
+      <p class="eyebrow">🌕 คืนวันเพ็ญ เดือนสิบสอง</p>
+      <h1>ลอยกระทงออนไลน์</h1>
+      <p class="subtitle">ร่วมสืบสานประเพณีไทย ส่งคำอธิษฐานให้ลอยไปกับสายน้ำ</p>
+    </header>
+
+    <section class="panel form-panel">
+      <h2>🪷 สร้างกระทงของคุณ</h2>
+      <form id="krathongForm">
+        <label for="name">ชื่อของคุณ</label>
+        <input id="name" name="name" type="text" maxlength="30" placeholder="กรอกชื่อของคุณ" required>
+
+        <label for="wish">คำอธิษฐาน</label>
+        <textarea id="wish" name="wish" maxlength="120" rows="3" placeholder="ขอให้ปีนี้มีแต่ความสุข..." required></textarea>
+
+        <p class="label">เลือกแบบกระทง</p>
+        <div class="choices">
+          <label class="choice">
+            <input type="radio" name="style" value="banana" checked>
+            <span class="emoji">🌼</span><span>กระทงใบตอง</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="style" value="lotus">
+            <span class="emoji">🪷</span><span>กระทงดอกบัว</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="style" value="candle">
+            <span class="emoji">🕯️</span><span>กระทงเทียน</span>
+          </label>
+        </div>
+        <button type="submit">✨ ลอยกระทงเลย</button>
+      </form>
+    </section>
+
+    <section class="river-scene" aria-label="แม่น้ำสำหรับลอยกระทง">
+      <div class="moon"></div>
+      <div class="river-label">สายน้ำแห่งคำอธิษฐาน</div>
+      <div id="river" class="river">
+        <div class="water-line line-one"></div>
+        <div class="water-line line-two"></div>
+      </div>
+    </section>
+    <p class="hint">กรอกชื่อ เลือกกระทง และพิมพ์คำอธิษฐาน จากนั้นกด “ลอยกระทงเลย”</p>
+    <footer>ประเพณีลอยกระทง 🌙</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
